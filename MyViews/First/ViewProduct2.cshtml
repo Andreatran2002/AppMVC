@@ -1,0 +1,10 @@
+@using App.Models
+@model App.Models.ProductModel
+
+@{
+    var product = ViewData["product"] as ProductModel; 
+    
+}
+<p>@ViewData["Title"]</p>
+<p>Tên sản phẩm : @product.Name</p>
+<p>Giá sản phẩm : @product.Price</p>
